@@ -1,0 +1,12 @@
+<div class='container'>
+<form>
+<mat-form-field appearance='standard' class='inputField'>
+<mat-label>City</mat-label>
+<input matInput placeholder='Katowice' #location type='text' (keydown.enter)='findCity(location.value)'>
+</mat-form-field>
+</form>
+<button mat-raised-button (click)='findCity(location.value)' color='accent'>Find</button>
+<div *ngFor='let detail of weatherValue; index as i'>
+    <p *ngIf='!detailsBoolean' class='details {{weatherValue[i]}}' (click)='showDetails($event)'>{{weatherDetails[i]}}</p>
+</div>
+</div>

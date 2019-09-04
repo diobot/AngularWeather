@@ -1,0 +1,28 @@
+mat-sidenav-container{
+    height: 100%;  
+}
+mat-sidenav-content{ 
+    width: 100%;   
+    background-image: linear-gradient(to bottom, rgb(178, 70, 255),rgb(205, 173, 253));
+}
+mat-sidenav{
+    height: 100%;
+    /* background-color: rgb(253, 156, 253); */
+}
+a{
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    display: block;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+button{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 1rem;
+    top: 0vh;
+}
+.active{
+    color: rgb(255, 0, 76);
+}
